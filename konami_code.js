@@ -20,15 +20,16 @@ function init() {
     if (key === codes[index]) {
       index++;
 
-      if (index === codes.length) {
-        alert('Congrats!!!');
-
-        index = 0;
-      }
     } else {
         alert('Keep trying ;(');
 
         index = 0;
+    }
+
+    if (index === codes.length) {
+      alert('Congrats!!!');
+
+      index = 0;
     }
   });
 }
