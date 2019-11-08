@@ -26,9 +26,9 @@ function init() {
         index = 0;
       }
     } else {
-      alert('Keep trying ;(');
+        alert('Keep trying ;(');
 
-      index = 0;
+        index = 0;
     }
   }
 }
