@@ -14,7 +14,6 @@ const codes = [
 let index = 0;
 
 function init() {
-  onKeyDownHandler(e);
   function onKeyDownHandler(e) {
     const key = e.key;
 
