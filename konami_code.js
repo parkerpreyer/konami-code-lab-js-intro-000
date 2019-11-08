@@ -13,22 +13,22 @@ const codes = [
 
 function init() {
   let index = 0;
-  document.body.addEventListener("keydown", (e) => {
-    const key = e.key;
+  document.body.addEventListener("keydown", (thingPressed) => {
+    const key = thingPressed.key
+    console.log(key)
 
-    if (key === codes[index]) {
-      index++;
-
-    } else {
-        alert('Keep trying ;(');
-
-        index = 0;
+    if (codes[index] == key) {
+      ++index
     }
 
-    if (index === codes.length) {
-      alert('Congrats!!!');
+    else {
+      idx = 0
+    }
 
-      index = 0;
+    console.log(index)
+    if (index == 10) {
+      alert("Hurray!");
+      index = 0
     }
   });
 }
