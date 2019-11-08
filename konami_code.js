@@ -25,7 +25,7 @@ function init() {
         index = 0;
     }
 
-    if (index === codes.length - 1) {
+    if (index === codes.length) {
       alert('Congrats!!!');
 
       index = 0;
